@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(135deg, #f598a8 0%, #1535bf 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.advantages {
+    padding: 10%;
+}
+
+.advantages h3 {
+    font-size: 30px;
+}
+
+.advantages p {
+    color: #fff;
+    padding: 14px 14px;
+    font-size: 20px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+h2 {
+    color: #fff;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+    background: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.graficlogo {
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: auto;
+    width: 800px;
+    height: 50px;
+}
+
+.topnav {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.topnav a {
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+
+.topnav a:not(.icon)hover {
+    border-bottom: 2px solid #fff;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav .close {
+    display: none;
+}
+
+.logo-icon {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #000;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+footer P {
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+footer nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+.social img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.social img:hover {
+    background: #494949;
+    border-radius: 50%;
+}
+
+.socialTwo img {
+    background: linear-gradient(135deg, #f598a8 0%, #1535bf 100%);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.contact {
+    color: #fff;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+
+.gallery {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.photo-itm {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 20%;
+}
+
+.photo-itm img {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.photo-logo {
+    text-align: left;
+}
+
+.photo-logo img {
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(.menu) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: black;
+    }
+    .topnav.responsive a.close {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: black;
+    }
+    nav {
+        width: 100%;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a.close {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a.href {
+        position: relative;
+        top: 25px;
+        float: none;
+        display: block;
+        text-align: left;
+        background: linear-gradient(135deg, #f598a8 0%, #1535bf 100%);
+    }
+    .advantages_item {
+        width: 45%;
+    }
+    .photo-itm {
+        width: 45%;
+        margin-left: 10px;
+    }
+    .photo-logo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h2 {
+        text-align: center;
+    }
+    .advantages_item {
+        width: 70%;
+    }
+    .gallery {
+        width: auto;
+        margin: auto;
+    }
+    .photo-itm {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
