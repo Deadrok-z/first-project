@@ -1,10 +1,8 @@
 window.onload = function menuF() {
-    var menu = document.getElementById('myTopnav');
-    menu.onclick = function myFunction() {
-        if (menu.className === 'topnav') {
-            menu.className += ' responsive';
-        } else {
-            menu.className = 'topnav';
-        }
-    }
+   const menu = document.getElementById('myTopnav');
+   if (!menu) { return; }
+   menu.onclick = () => {
+      menu.classList.contains('responsive') ?
+         menu.classList.remove('responsive') : menu.classList.add('responsive');
+   };
 }
